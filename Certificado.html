@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styless.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">ENCUESTA SOBRE CRIPTOMONEDAS Y SU ADPTABILIDAD</h1>
+            <P id="description" class="comentario">La presente encuesta establecera su conocimiento acerca de las Criptomonedas y su adaptabilidad en un Futuro cercano</P>
+        </header>
+        <form id="survey-form">    
+            <div>
+                <label id="name-label"> Nombre<input class="requerido" required type="text" id="name" placeholder="Ingresa tu nombre"></label>
+                <label id="email-label"> Correo Electrónico<input class="requerido" required type="email" id="email" placeholder="Correo electrónico"></label>
+                <label id="number-label"> Edad<input class="requerido" type="number" id="number" min="13" max="120" placeholder="Ingresa tu edad (+13)"></label>
+            </div>
+            <div><legend>Conoces algo sobre las Criptomonedas?</legend>
+                <select id="dropdown">
+                    <option disabled selected>Selecciona una opción</option>
+                    <option value="estudiado">He estudiado algo</option>
+                    <option value="tutoriales">He visto algunos tutoriales</option>
+                    <option value="amigos">Escucho hablar a mis amigos del tema</option>
+                    <option value="nada">Absolutamente Nada</option>
+                </select>
+            </div>
+            <div><legend>¿Elegirias las Criptomonedas para basar tu economía futura?</legend>
+                <div class="radio"><input value="Posiblemente" type="radio" name="radio"> Posiblemente</div>
+                <div class="radio"><input value="Lo dudo" type="radio" name="radio"> Lo dudo</div>
+                <div class="radio"><input value="Quizas" type="radio" name="radio"> Quizas</div>
+                <div class="radio"><input value="Definitivamente no" type="radio" name="radio"> Definitivamente no</div>
+            </div>
+            <div><legend>Cual de estos terminos te es familiar?</legend>
+                <div class="check"><input type="checkbox" value="Blockchain"> Blockchain</div>
+                <div class="check"><input type="checkbox" value="Pares comerciales"> Pares comerciales</div>
+                <div class="check"><input type="checkbox" value="Volatilidad"> Volatilidad</div>
+                <div class="check"><input type="checkbox" value="Mercados"> Mercados</div>
+                <div class="check"><input type="checkbox" value="Exchange"> Exchange</div>
+                <div class="check"><input type="checkbox" value="Staking"> Staking</div>
+                <div class="check"><input type="checkbox" value="Finanzas descentralizadas"> Finanzas descentralizadas</div>
+                <div class="check"><input type="checkbox" value="Monedas"> Monedas</div>
+            </div>
+            <div><legend>¿Cual es tu opinion acerca de las criptomonedas y su futuro en la economia mundial?</legend>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit" class="submit">ENVIAR</button>
+            </div>
+        </form>
+    </body>
+</html>
